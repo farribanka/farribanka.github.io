@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+.container {
+    flex: 1;
+    display: flex;
+}
+aside {
+    flex: 2;
+    background-color: rgb(208, 178, 214);
+}
+main {
+    flex: 5;
+    background-color: #fff;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+footer {
+    background-color: #333;
+}
+
+/* ! Стили для главного меню */
+.main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 1em;
+}
+
+/* ! Стили для карточки */
+.card {
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.card img {
+    width: 100%;
+}
+
+/* Сбросить стили для стандартной ссылки и посещенной */
+main a, main a:visited {
+    color: #333;
+    text-decoration: none;
+}
